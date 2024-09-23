@@ -1,5 +1,6 @@
 config.py
 all_templates/
+uploads/
 venv/
 __pycache__/
 *.pyc
