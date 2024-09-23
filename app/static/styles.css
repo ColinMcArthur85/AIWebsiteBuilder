@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  #loading {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  .left-panel, .right-panel {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .left-panel {
+    background-color: #f0f0f0;
+  }
+  textarea {
+    width: 100%;
+    height: 70%;
+  }
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  pre {
+    background-color: #2d2d2d;
+    color: #ccc;
+    padding: 20px;
+    height: 80%;
+    overflow: auto;
+  }
+  h2 {
+    margin-top: 0;
+  }

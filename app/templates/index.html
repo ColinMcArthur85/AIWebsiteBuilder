@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Code Generator Prototype</title>
+    <!-- Update the path to styles.css -->
+    <link rel="stylesheet" href="/static/styles.css" />
+    <!-- Include Prism.js CSS for syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <h2>Enter Your Prompt</h2>
+        <textarea id="user-input" placeholder="Describe what you want to build..."></textarea>
+        <button id="generate-btn">Generate Code</button>
+        <button id="clear-prompt">Clear Prompt</button>
+        <!-- Add loading indicator -->
+        <div id="loading" style="display: none">Processing request, please wait...</div>
+        <h2>Upload an Image</h2>
+        <input type="file" id="image-upload" accept="image/*" />
+        <button id="upload-btn">Upload Image</button>
+      </div>
+      <div class="right-panel">
+        <h2>Generated Code</h2>
+        <pre><code id="generated-code" class="language-html"></code></pre>
+        <button id="copy-code">Copy to Clipboard</button>
+      </div>
+    </div>
+
+    <!-- Include Prism.js JS for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <!-- Update the path to script.js -->
+    <script src="/static/script.js"></script>
+  </body>
+</html>
