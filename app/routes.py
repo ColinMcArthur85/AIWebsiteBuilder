@@ -1,7 +1,11 @@
 from flask import request, jsonify, render_template
 import logging
 import openai
-from .config import Config
+# ``Config`` was originally imported from ``app.config`` which requires a
+# ``config.py`` file that is not included in the repository.  Import the
+# configuration template bundled with the project instead so the routes can
+# access default settings without additional setup.
+from .config_template import Config
 from .helpers import extract_background_color, enforce_immutable_rules, generate_button_html
 import os
 from PIL import Image
